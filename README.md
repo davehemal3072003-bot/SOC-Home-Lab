@@ -18,7 +18,6 @@ log collection → detection → automated alerting → incident documentation.
 - **Splunk Universal Forwarder** — ships Windows/Sysmon logs to Splunk
 - **Atomic Red Team** — simulates MITRE ATT&CK techniques
 
-![Lab Architecture](screenshots/lab-network.jpg)
 
 ## 🛠️ What I Did
 
@@ -46,19 +45,16 @@ index=main sourcetype="WinEventLog:Microsoft-Windows-Sysmon/Operational"
 EventCode=1 CommandLine="*mimikatz*"
 ```
 
-![Detection Result](screenshots/detection-result.jpg)
 
 ## 🚨 Alert
 
 Built and validated a Splunk alert ("Suspicious PowerShell") that
 automatically triggers when this activity is detected.
 
-![Triggered Alert](screenshots/triggered-alert.jpg)
 
 ## 📄 Incident Report
 
 Full incident report with timeline, severity assessment, and remediation
-recommendations: [incident-report.pdf](reports/incident-report.pdf)
 
 ## 🧰 Tools Used
 
@@ -73,6 +69,3 @@ MITRE ATT&CK
 - Practiced mapping raw log data to MITRE ATT&CK and writing a structured
   incident report
 
-## 📬 Contact
-
-[Your Name] — [Your LinkedIn URL] — [Your Email]
